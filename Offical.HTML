@@ -200,9 +200,9 @@ main {
     font-weight: 100;
     font-family: 'Calibri Light', sans-serif;
     padding: 20px 20px;
-    padding-right: 25px;
+    padding-right: 20px;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 22px;
     color: black;
 }
 
@@ -261,10 +261,11 @@ main {
 }
 
 .strategy-overlay h2 {
-    margin: 0 0 10px;
+    margin: 0 0 0px;
     font-size: 30px;
     color: black;
     font-weight: 100;
+    line-height: 1.2;
 }
 
 .learn-more-dark {
@@ -272,7 +273,7 @@ main {
     text-decoration: underline;
     font-size: 16px;
     display: inline-block;
-    margin-top: 1px;
+    margin-top: 5px;
     transition: color 0.3s ease;
 }
 
@@ -281,18 +282,22 @@ main {
 }
 
 .vision-section {
-    background-color: #f8f8f86f;
-    padding: 60px 20px;
+ background-color: #A2A0A0;
+ margin-top: 80px;
+    padding: 40px 0; /* Remove horizontal padding */
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw; /* Full viewport width */
+    margin-left: calc(-50vw + 50%); /* Center and extend to edges */
 }
 
 .vision-content {
-    max-width: 600px;
+ max-width: 600px;
     font-family: 'Calibri Light', sans-serif;
     color: black;
     text-align: left;
+    padding: 0 20px; /* Add padding just to the content */
 }
 
 .vision-content h2 {
