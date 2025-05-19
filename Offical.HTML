@@ -296,7 +296,7 @@ main {
 }
 
 .vision-section {
-    background-color: #969696;
+    background-color: #c4bfbf;
     padding: 60px 20px;
     display: flex;
     justify-content: center;
@@ -355,6 +355,60 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+
+.contact-section {
+  background-color: #202510; /* dark green-black like your image */
+  color: white;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-content {
+  max-width: 500px;
+  width: 100%;
+  font-family: 'Calibri Light', sans-serif;
+}
+
+.contact-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.contact-content em {
+  font-style: italic;
+}
+
+.contact-content u {
+  text-decoration: underline;
+}
+
+.contact-content p {
+  margin: 10px 0 30px;
+  font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  color: white;
+  padding: 10px 5px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: white;
+  opacity: 0.8;
+}
 
 
 
@@ -471,7 +525,22 @@ main {
               <a href="#" class="learn-more-yellow">Learn about Dumore</a>
               </div>
             </section>
+
+
+            <section class="contact-section">
+                <div class="contact-content">
+                   <h2>Let's build something<br><em>extraordinary <u>together</u></em></h2>
+                   <p>Connect with us</p>
+                   <form class="contact-form">
+                   <input type="text" placeholder="Name" required>
+                   <input type="tel" placeholder="Number" required>
+                   <input type="email" placeholder="Email" required>
+                   <textarea placeholder="Message" rows="4"></textarea>
+                </form>
+              </div>
+           </section>
       
+
         </div>
     </footer>
  
