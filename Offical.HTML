@@ -166,6 +166,101 @@
     align-items: center;
     justify-content: center;
     z-index: 1; 
+
+}
+
+/* Ensure the GIF properly fits without taking over the whole site */
+.gif-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures full cover */
+    object-position: center;
+    filter: brightness(0.65);
+  
+}
+
+
+
+/* Business plan header text */
+.business-plan-header {
+    position: absolute;
+    text-align: left;
+    color: white;
+    z-index: 2;
+    bottom: 10%;
+    width: 100%;
+    padding-left: 20px;
+}
+
+/* Styling text */
+.business-plan-header h1 {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 28px;
+    margin-bottom: 5px;
+    line-height: 0.05;
+    padding-left: 20px;
+}
+
+.business-plan-header h2 {
+    font-family: 'Calibri Light', sans-serif;
+    font-weight: 100;
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+/* Underline design */
+.underline {
+    width: 100px;
+    height: 2px;
+    background: white;
+    margin-top: 40px;
+    left: 300px;
+    right: 100px;
+    margin-left: 22px;
+}
+
+
+main {
+    position: absolute;
+    background: white; /* Set proper background color */
+}
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+
+/* GIF banner stays limited to its section */
+.gif-banner {
+    overflow-y: hidden;
+    position: relative;
+    width: 100vw;
+    height: calc(100vh + 20px);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; 
 }
 
 /* Ensure the GIF properly fits without taking over the whole site */
@@ -221,18 +316,14 @@
 }
 
 
-main {
-    position: absolute;
-    background: white; /* Set proper background color    WHAT IS THIS*/
-}
 
 .dumore-paragraph {
     text-align: left;
     font-weight: 100;
     font-family: 'Calibri Light', sans-serif;
     padding: 10px 10px;
-    line-height: 1.5;
-    font-size: 25px;
+    line-height: 1.7;
+    font-size: 26px;
     color: white;
     background-color: #202510;
 }
@@ -281,6 +372,7 @@ main {
   display: flex;
   justify-content: center;
   text-align: left;
+  padding-top: 40px;
 }
 
 .aum-content {
@@ -305,7 +397,6 @@ main {
   font-size: 16px;
   line-height: 1.6;
   font-family: 'Calibri Light', sans-serif;
-  margin-bottom: 35px;
   font-weight: 100;
 }
 
@@ -316,10 +407,10 @@ main {
 
 .investment-strategy-section {
     width: 90%;
-
     margin: 40px auto;
-    padding: 0 20px;    /* adds spacing inside on left/right */
-    margin-top: 100px;
+    padding: 10px 20px;    /* adds spacing inside on left/right */
+    margin-top: 0px;
+    margin-bottom: 100px;
     position: relative;
     font-family: 'Calibri Light', sans-serif;
     border: 0px solid red; /* width | style | color */
@@ -349,7 +440,7 @@ main {
 .learn-more-dark {
     color: black;
     text-decoration: underline;
-    font-size: 16px;
+    font-size: 12px;
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -361,18 +452,17 @@ main {
 }
 
 .vision-section {
-    background-color: #c4bfbf;
-    padding: 60px 10px;
+    background-color: #063146;
+    padding: 70px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
 }
 
 .vision-content {
  max-width: 600px;
     font-family: 'Calibri Light', sans-serif;
-    color: black;
+    color: white;
     text-align: left;
     padding: 0 20px; /* Add padding just to the content */
 }
@@ -391,7 +481,7 @@ main {
 }
 
 .vision-content p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 30px;
     font-weight: 100;
@@ -425,7 +515,7 @@ main {
 .contact-section {
   background-color: #202510; /* dark green-black like your image */
   color: white;
-  padding: 60px 40px;
+  padding: 60px 30px;
   display: flex;
   justify-content: center;
 }
@@ -654,7 +744,7 @@ main {
            <a href="#opportunities">Opportunities</a>
            <a href="#about">About</a>
            <a href="#contact">Contact</a>
-           <a href="https://www.linkedin.com/company/dumore">LinkedIn</a>
+           <a href="https://www.linkedin.com/company/dü-more">LinkedIn</a>
            </div>
           <div class="footer-logo">
          <img src="image (7).png" alt="Dümore Logo">
