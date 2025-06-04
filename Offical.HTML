@@ -128,13 +128,36 @@
             cursor: pointer;
         }
 
-
+  #nav-icon3 {
+    display: block;
+  }
 
   main {
   position: absolute;
   background: white;
 }
 
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+  }
 
 
 /* GIF banner stays limited to its section */
@@ -142,7 +165,7 @@
     overflow-y: visible;
     position: relative;
     width: 100vw;
-
+    top: -20px;
     height: calc(100vh + 20px);
     overflow: hidden;
     display: flex;
