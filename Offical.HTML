@@ -28,7 +28,6 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow-x: hidden;
         }
  
         header {
@@ -162,10 +161,9 @@
 
 /* GIF banner stays limited to its section */
 .gif-banner {
-    overflow-y: visible;
+    overflow-y: hidden;
     position: relative;
     width: 100vw;
-    top: -20px;
     height: calc(100vh + 20px);
     overflow: hidden;
     display: flex;
@@ -371,7 +369,7 @@
 }
 
 .vision-content {
- max-width: 600px;
+ max-width: auto;
     font-family: 'Calibri Light', sans-serif;
     color: white;
     text-align: left;
