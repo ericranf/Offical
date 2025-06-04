@@ -166,7 +166,6 @@
     align-items: center;
     justify-content: center;
     z-index: 1; 
-
 }
 
 /* Ensure the GIF properly fits without taking over the whole site */
@@ -175,7 +174,7 @@
     height: 100%;
     object-fit: cover; /* Ensures full cover */
     object-position: center;
-    filter: brightness(0.65);
+    filter: brightness(0.40);
   
 }
 
@@ -224,7 +223,7 @@
 
 main {
     position: absolute;
-    background: white; /* Set proper background color */
+    background: white; /* Set proper background color    WHAT IS THIS*/
 }
 
 .dumore-paragraph {
@@ -234,19 +233,16 @@ main {
     padding: 10px 10px;
     line-height: 1.5;
     font-size: 25px;
-    color: black;
-    background-image: url('dots.png'); /* or path like assets/images/dots.png */
-    background-repeat: no-repeat;
-    background-size: auto 100%;  /* Fit height, keep original width ratio */
-    background-position: calc(100% + 150px) bottom; /* Push image beyond right edge */
+    color: white;
+    background-color: #202510;
 }
-
-
 
 .dumore-paragraph > * {
     position: relative;
     z-index: 1;
 }
+
+
 
 .learn-more {
     display: inline-block;
@@ -279,8 +275,8 @@ main {
 
 
 .aum-section {
-  background-color: #202510; /* Match your dark blue background */
-  color: white;
+  background-color: white; /* Match your dark blue background */
+  color: black;
   padding: 40px 30px;
   display: flex;
   justify-content: center;
@@ -623,7 +619,7 @@ main {
                <img src="Mount.png" alt="Investment Strategy" class="mountain-image">
                <div class="strategy-overlay">
                   <h2>Our Investment<br>Strategy</h2>
-                  <a href="#" class="learn-more-dark">Learn More</a>
+                  <a href="#" class="learn-more-dark">LEARN MORE</a>
               </div>
             </section>
 
