@@ -127,6 +127,32 @@
             cursor: pointer;
         }
 
+  #nav-icon3 {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
 
 /* GIF banner stays limited to its section */
 .gif-banner {
@@ -401,7 +427,7 @@ main {
 .contact-section {
   background-color: #202510; /* dark green-black like your image */
   color: white;
-  padding: 60px 20px;
+  padding: 60px 40px;
   display: flex;
   justify-content: center;
 }
@@ -428,13 +454,14 @@ main {
 }
 
 .contact-content p {
-  margin: 10px 0 30px;
+  margin: 10px 0px;
   font-size: 16px;
+  padding-bottom: 20px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
+  width: 93%;
   border: none;
   border-bottom: 1px solid white;
   background: transparent;
@@ -449,6 +476,36 @@ main {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: white;
+  opacity: 0.8;
+}
+
+.custom-footer {
+  background-color: #202510; /* same dark green background */
+  color: white;
+  padding: 2rem;
+  font-family: 'Calibri Light', sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+    outline: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo img {
+  width: 120px;
   opacity: 0.8;
 }
 
@@ -592,8 +649,19 @@ main {
                    <textarea placeholder="Message" rows="4"></textarea>
                 </form>
               </div>
+
            </section>
-      
+           <footer class="custom-footer">
+           <div class="footer-links">
+           <a href="#opportunities">Opportunities</a>
+           <a href="#about">About</a>
+           <a href="#contact">Contact Us</a>
+           <a href="https://www.linkedin.com/company/dumore">LinkedIn</a>
+           </div>
+          <div class="footer-logo">
+         <img src="image (7).png" alt="Dümore Logo">
+        </div>
+        </footer>
 
         </div>
     </footer>
@@ -606,9 +674,8 @@ main {
         nav.classList.toggle('open');
         icon.classList.toggle('open');
     }
-
-
 </script>
+
 </body>
 </html>
 
