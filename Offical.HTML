@@ -24,7 +24,7 @@
     }
 
         body, html {
-            background-color: black;
+            background-color: white;
             margin: 0;
             padding: 0;
             height: 100%;
@@ -131,6 +131,11 @@
     display: block;
   }
 
+  main {
+  position: absolute;
+  background: white;
+}
+
   nav {
     display: none;
     flex-direction: column;
@@ -156,17 +161,15 @@
 
 /* GIF banner stays limited to its section */
 .gif-banner {
-    overflow-y: visible;
+    overflow-y: hidden;
     position: relative;
     width: 100vw;
-    top: -20px;
     height: calc(100vh + 20px);
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1; 
-
 }
 
 /* Ensure the GIF properly fits without taking over the whole site */
@@ -175,7 +178,7 @@
     height: 100%;
     object-fit: cover; /* Ensures full cover */
     object-position: center;
-    filter: brightness(0.65);
+    filter: brightness(0.40);
   
 }
 
@@ -222,32 +225,24 @@
 }
 
 
-main {
-    position: absolute;
-    background: white; /* Set proper background color */
-}
 
 .dumore-paragraph {
     text-align: left;
     font-weight: 100;
     font-family: 'Calibri Light', sans-serif;
-    padding: 20px 20px;
-    padding-right: 20px;
-    line-height: 1.5;
-    font-size: 22px;
-    color: black;
-    background-image: url('dots.png'); /* or path like assets/images/dots.png */
-    background-repeat: no-repeat;
-    background-size: auto 100%;  /* Fit height, keep original width ratio */
-    background-position: calc(100% + 150px) bottom; /* Push image beyond right edge */
+    padding: 10px 10px;
+    line-height: 1.7;
+    font-size: 26px;
+    color: white;
+    background-color: #202510;
 }
-
-
 
 .dumore-paragraph > * {
     position: relative;
     z-index: 1;
 }
+
+
 
 .learn-more {
     display: inline-block;
@@ -259,9 +254,9 @@ main {
     font-family: 'Calibri Light', sans-serif;
     font-size: 13px;
     margin-top: 10px;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
     transition: all 0.3s ease;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .learn-more:hover {
@@ -280,13 +275,12 @@ main {
 
 
 .aum-section {
-  background-color: white; /* Match your dark blue background */
-  color: black;
-  padding: 40px 30px;
+  background-color: #272B14; /* Match your dark blue background */
+  color: white;
+  padding: 20px 25px;
   display: flex;
   justify-content: center;
   text-align: left;
-  padding-top: 40px;
 }
 
 .aum-content {
@@ -296,14 +290,14 @@ main {
 }
 
 .aum-content h3 {
-  font-size: 25px;
-  margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 20px;
   font-weight: 300;
 }
 
 .aum-figure {
   font-family: 'Times New Roman', serif;
-  font-size: 100px;
+  font-size: 125px;
   margin: 0 0 20px 0;
 }
 
@@ -311,7 +305,6 @@ main {
   font-size: 16px;
   line-height: 1.6;
   font-family: 'Calibri Light', sans-serif;
-  font-weight: 100;
 }
 
 
@@ -320,14 +313,14 @@ main {
 
 
 .investment-strategy-section {
-    width: 90%;
+    width: 85%;
+
     margin: 40px auto;
-    padding: 10px 20px;    /* adds spacing inside on left/right */
-    margin-top: 0px;
-    margin-bottom: 100px;
+    padding: 0 20px;    /* adds spacing inside on left/right */
+    margin-top: 100px;
     position: relative;
     font-family: 'Calibri Light', sans-serif;
-    border: 0px solid red; /* width | style | color */
+      border: 0px solid red; /* width | style | color */
 
 }
 
@@ -340,7 +333,7 @@ main {
     background-color: #BE3838;
     color: black;
     padding: 10px 28px;
-    font-weight: 90;
+    font-weight: 100;
 }
 
 .strategy-overlay h2 {
@@ -354,7 +347,7 @@ main {
 .learn-more-dark {
     color: black;
     text-decoration: underline;
-    font-size: 12px;
+    font-size: 16px;
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -366,17 +359,18 @@ main {
 }
 
 .vision-section {
-    background-color: #063146;
-    padding: 70px 10px;
+    background-color: #c4bfbf;
+    padding: 60px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 
 .vision-content {
  max-width: 600px;
     font-family: 'Calibri Light', sans-serif;
-    color: white;
+    color: black;
     text-align: left;
     padding: 0 20px; /* Add padding just to the content */
 }
@@ -395,7 +389,7 @@ main {
 }
 
 .vision-content p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
     margin-bottom: 30px;
     font-weight: 100;
@@ -411,7 +405,6 @@ main {
     font-family: 'Calibri Light', sans-serif;
     font-size: 13px;
     transition: all 0.3s ease;
-    margin-bottom: 50px;
 }
 
 .learn-more-yellow:hover {
@@ -429,7 +422,7 @@ main {
 .contact-section {
   background-color: #202510; /* dark green-black like your image */
   color: white;
-  padding: 60px 30px;
+  padding: 60px 40px;
   display: flex;
   justify-content: center;
 }
@@ -491,16 +484,15 @@ main {
 .footer-links {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  padding-left: 2.5px;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .footer-links a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
-  outline: none;
+    outline: none;
 }
 
 .footer-links a:hover {
@@ -509,6 +501,7 @@ main {
 
 .footer-logo img {
   width: 120px;
+  opacity: 0.8;
 }
 
 
@@ -623,7 +616,7 @@ main {
                <img src="Mount.png" alt="Investment Strategy" class="mountain-image">
                <div class="strategy-overlay">
                   <h2>Our Investment<br>Strategy</h2>
-                  <a href="#" class="learn-more-dark">LEARN MORE</a>
+                  <a href="#" class="learn-more-dark">Learn More</a>
               </div>
             </section>
 
@@ -657,8 +650,8 @@ main {
            <div class="footer-links">
            <a href="#opportunities">Opportunities</a>
            <a href="#about">About</a>
-           <a href="#contact">Contact</a>
-           <a href="https://www.linkedin.com/company/dü-more">LinkedIn</a>
+           <a href="#contact">Contact Us</a>
+           <a href="https://www.linkedin.com/company/dumore">LinkedIn</a>
            </div>
           <div class="footer-logo">
          <img src="image (7).png" alt="Dümore Logo">
@@ -676,7 +669,8 @@ main {
         nav.classList.toggle('open');
         icon.classList.toggle('open');
     }
-</script>
 
+
+</script>
 </body>
 </html>
